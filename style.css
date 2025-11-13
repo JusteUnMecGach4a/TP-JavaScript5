@@ -1,0 +1,17 @@
+/* Applique le style au corps de la page */
+body {
+    background-color: #000000; /* Fond noir strict */
+    color: #FFFFFF; /* Texte blanc strict */
+    font-family: Arial, sans-serif; /* Maintien d'une police lisible */
+    margin: 20px; 
+}
+
+/* Assure que tous les titres (h1, h2, h3, etc.) restent blancs aussi */
+h1, h2, h3, h4, h5, h6 {
+    color: #FFFFFF;
+}
+
+/* Les liens, par défaut, sont souvent bleus. On les met en blanc. */
+a {
+    color: #FFFFFF;
+}

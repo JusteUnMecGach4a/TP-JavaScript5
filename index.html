@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP Synthèse - Convertisseur</title>
+    
+    <script src="tpSynthese.js"></script> 
+    
+    <link rel="stylesheet" href="style.css"> 
+    
+    <script>
+        // Taux de conversion officiel de l'Euro vers le Franc
+const TAUX = 6.55957;
+
+/**
+ * Calcule les Francs à partir des Euros (Euros -> Francs).
+ * Récupère la valeur du champ #euros et l'affiche dans le champ #francs.
+ */
+function franc() {
+    // Récupère la valeur du champ d'entrée pour les Euros
+    const euros = document.getElementById("euros").value;
+    
+    // Calcule (Euros * Taux) et affiche dans le champ Francs
+    document.getElementById("francs").value = euros * TAUX;
+}
+
+/**
+ * Calcule les Euros à partir des Francs (Francs -> Euros).
+ * Récupère la valeur du champ #francs et l'affiche (arrondie) dans le champ #euros.
+ */
+function euro() {
+    // Récupère la valeur du champ d'entrée pour les Francs
+    const francs = document.getElementById("francs").value;
+    
+    // Calcule (Francs / Taux) et affiche dans le champ Euros, arrondi à 2 décimales
+    document.getElementById("euros").value = (francs / TAUX).toFixed(2);
+}
+
+    </script>
+    </head>
+<body>
+
+    <header>
+        <img src="images/logo.PNG" alt="Logo du site" width="150"> 
+        <h1>TP Synthèse : HTML/CSS/JAVASCRIPT</h1>
+        <p>Canova-Prévot Léo</p>    
+    </header>
+
+    <main>
+        <h2>Convertisseur Francs-Euro</h2>
+        
+        <section>
+            
+            <p>
+                <a href="javascript:affichageConvertisseur()" id="lien_convertisseur">
+                    Afficher le convertisseur Francs-Euro
+                </a>
+            </p>
+            
+            <div id="zone_injection_convertisseur">
+            </div>
+            
+        </section>
+        
+        <p>Mon premier paragraphe.</p>
+    </main>
+
+    <footer>
+        <p>Site à visée pédagogique pour les étudiants du BTS1 CIEL du lycée Poincaré de Bar-le-Duc</p>
+        <p>Le contenu de ce site n'est pas destiné à une publication sur Internet.</p>
+    </footer>
+
+</body>
+</html>
