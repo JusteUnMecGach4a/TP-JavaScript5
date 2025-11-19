@@ -70,7 +70,7 @@ function affichageNouvelleFenetre() {
                 }
                 
                 h1 {
-                    color: #00ffff; /* Bleu Turquoise (pour le contraste) */
+                    color: #ffffffff; /* Bleu Turquoise (pour le contraste) */
                 }
                 
                 table { 
@@ -80,7 +80,7 @@ function affichageNouvelleFenetre() {
                 }
                 
                 th, td { 
-                    border: 1px solid #00ffff; /* Bordures en turquoise */
+                    border: 1px solid #ffffffff; /* Bordures en turquoise */
                     padding: 10px; 
                 }
                 
